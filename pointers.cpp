@@ -22,7 +22,7 @@ int getNonNegSum(int* arrPtr, int& sz, int& idx, int& count){
     }
 
     return sum;
-}//DONE
+}
 
 bool isAscendingDigits(char* cStr){
     int curr, next;
@@ -38,7 +38,7 @@ bool isAscendingDigits(char* cStr){
     }
 
     return true;
-}//DONE
+}
 
 
 int len(char* cStr){
@@ -70,7 +70,7 @@ char* duplicateWithoutBlanks(char* cStr){
     *(cStr2+j) = *(cStr+i);
     
     return cStr2;
-}//DONE    
+}   
 */
 
 /*
@@ -89,7 +89,7 @@ char* duplicateWithoutBlanks(char* cStr){
     *cc++ = *c;
 
     return cStr2;
-}//DONE  
+}  
 */
 
 char* duplicateWithoutBlanks(char* cStr){
@@ -103,7 +103,7 @@ char* duplicateWithoutBlanks(char* cStr){
     *pCurr = *cStr;
   
     return cStr2;
-}//DONE    
+}    
 
 
 bool hasHelpOption(int argc, char* argv[]){
@@ -116,7 +116,7 @@ bool hasHelpOption(int argc, char* argv[]){
     }
     
     return false;
-}//DONE
+}
 
 int main(){//int argc, char* argv[]
 
@@ -164,4 +164,3 @@ int main(){//int argc, char* argv[]
     
     return 0;
 }
-//EXPLAIN how functions are used and tested
