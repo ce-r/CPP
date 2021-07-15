@@ -183,7 +183,7 @@ string display(vector<Stock*>& hist){
     if(!hist.empty()){
         for(int i = 0; i < hist.size(); i++){
             ss << fixed;
-            ss << hist[i]->toString();//CHECK IF CORRECT!!
+            ss << hist[i]->toString();
         }
     }
 
@@ -199,8 +199,8 @@ string summary(vector<Stock*>& hist){// DYNAMIC CASTING
         
     for(int i=0; i<hist.size(); i++){
         //i.e. IntVar *pNumObj = dynamic_cast<IntVar*> (pVar);
-        //CHECK IF NULL, IF NOT, IT's pointing to correct obj;
-        //NEED to make parent class contain at least one virtual method
+        //check if null. if no, it's pointing to correct obj.
+        //now make parent class contain at least one virtual method
         //to be polymorphic, to make dynamic casting work 
         BuyTransaction* bt = dynamic_cast<BuyTransaction*> (hist[i]);
         
