@@ -55,12 +55,11 @@ string binaryFiles(string bfile, vector<tuple<char, string, bitset<8>, int>>& vT
 		string morse = "";
 
 		for(int i=0; i<size; i++) {  
-            bitset<8> charBin(memblock[i]);
+            		bitset<8> charBin(memblock[i]);
 			bitset<8> check = bitset<8>("11000000");
 			bitset<8> bCheck;
 
 			for(int i=0; i<4 ; i++){
-
 				if(i == 0)
 					isolate = ((charBin & check) >> (binThresh -= 2)).to_ulong();
 				else {
